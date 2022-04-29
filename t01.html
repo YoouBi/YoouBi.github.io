@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- 버전 vs.code는 지금 버전5임 -->
+<html lang="en">
+<!-- 언어는 영어 -->
+
+<head>
+    <!-- 부모-바닥.설정, 안에 있는 것(meta)은 자식-바디 -->
+    <meta charset="UTF-8">
+    <!-- 유니코드. 다른 나라에서도 한글로 보이도록 만듦 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !!중요!!핸드폰에서 정확한 사이즈로 만드는 부분 -->
+    <title>html part 01</title>
+    <!-- alt+L+O로 ddd열기 안되면 옆의 확장에서 Live Server깔기 -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            color: red;
+            background-color: #f00;
+            width: 500px;
+            border: 1px solid #000;
+            padding: 50px;
+            /* 이때의 width의 값을 500픽셀로 설정하여 모니터의 픽셀수가 1500정도였을 때 1/4정도가 붉은 색으로 표시되어야 맞지만,
+            부모인 h1의 값이 정해지지 않았으므로 내려받은 자식의 값 또한 auto가 됨. 보통 높이 값은 자동으로 돌아가도록 함 */
+            /* border는 박스 테두리 padding은 박스 안쪽 너비 margen은 바깥 너비 */
+        }
+
+        main {
+            background-color: #ff0;
+            width: 500px;
+        }
+
+        /* !!아주 중요!! header라는 태그를 선택하는 선택자 color는 속성 red는 속성값 ;는 뒤에 무언가 더 있다는 뜻
+        (소괄호) {중괄호} [대괄호] */
+        /* 빨간 색의 코드는 ff0000인데 같은 값이 중복되면 3자리수로 줄일 수 있음 */
+    </style>
+</head>
+
+<body>
+    <!-- 주석(ctrl+/) : 박스모델 -->
+
+    <header>
+        01
+        <!-- header의 <h1>과 main의 h2의 margen이 있어 위아래의 공간이 생기는 것 -->
+    </header>
+    <main>
+        0000
+    </main>
+
+    <script>
+// 
+    </script>
+
+</body>
+
+</html>

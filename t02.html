@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 동일하게 놓기</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            display: flex;
+            /* 모든 붙이는 것들, 띄우는 것들은 쪼그라드는 성질을 가지고 있어서 펴줘야 함 */
+            margin: 0 auto 0 auto;
+            /* 축약형 0 auto 방향 상우하좌 에 따라 대립하여 자동으로 (중앙으로) 놓는 것 */
+            text-align: center;
+            /* text는 기본적으로 좌측으로 붙어있음 */
+            width: 1200px;
+            background: #f00;
+        }
+
+        section>div {
+            /* section div는 증손자까지 선택 section>div는 자식만 선택 */
+            flex: 1;
+            /* width에 %값을 주거나 flex: 1을 줘서 서로 소리질러서 펴지게 만든다 */
+            color: #369;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>001</div>
+        <div>002</div>
+        <div>003</div>
+        <div>004</div>
+        <!-- div는 기본 박스 -->
+    </section>
+    <div>004</div>
+</body>
+
+</html>
