@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- en으로 해도 한국어가 안되는건 아니지만 시각장애인들이 못 읽음 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 원래 있던 값을 없애고 내 값을 채워넣기 위해 reset, 후에 레이아웃을 덮어씌운다
+        순서가 중요함! 순서대로 처리하므로 우선순위는 가장 마지막에 오는 main이 된다 -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <!-- 대문자로 다른 단어의 시작 앞머리를 나타내는 방법을 낙타 등이라고 한다
+            _언더바 케이스로 붙이는 방법, 하이푼으로 붙이는 방법도 있다(제일 외국에서 많이 쓰임)
+            회사마다 쓰는 방법이 다르다 한글로는 잘 안쓴다 -->
+            <div class="top_banner">
+                <div class="container">
+                    <!-- 보통 12000의 와이드형을 container라고 한다 -->
+                    <span>깔끔이청소 : 정말 똑소리나게 잘하는 부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문 깔끔이
+                    </span>
+                    <a href="#!">
+                        <i class="xi-pause"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">깔끔이청소 소개</a></li>
+                        <li><a href="#!">아파트입주청소</a></li>
+                        <li><a href="#!">이사/상가청소</a></li>
+                        <li><a href="#!">사무실청소</a></li>
+                        <li><a href="#!">청소갤러리</a></li>
+                        <li><a href="#!">질문과답변</a></li>
+                    </ul>
+                    <!-- 메뉴를 이 네비대로 쏴준다 -->
+
+                </nav>
+            </div>
+        </header>
+        <main>
+            main
+
+            <!-- main에는 클래스가 안붙는다.
+            main이 크롬에서는 지원되지만 인터넷 익스플로러에선 지원을 안해서 혹시나 싶어서 뭘 붙이진 않는다.
+            can i use에서 어디서 쓸 수 있는지 검색할 수 있다-->
+        </main>
+        <footer class="footer">
+            &copy; lee
+            <!-- 카피라이터 표시 -->
+        </footer>
+    </div>
+</body>
+
+</html>
