@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+<!-- en으로 해도 한국어가 안되는건 아니지만 시각장애인들이 못 읽음 -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YooBi</title>
-    <!-- 어떤 에디터에서는 이 부분을 안만들어주는데 이게 없으면 홈페이지가 안만들어진다 -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 원래 있던 값을 없애고 내 값을 채워넣기 위해 reset, 후에 레이아웃을 덮어씌운다
+        순서가 중요함! 순서대로 처리하므로 우선순위는 가장 마지막에 오는 main이 된다 -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <h1>documant</h1>
+    <div class="wrap">
+        <header class="header">
+            <!-- 대문자로 다른 단어의 시작 앞머리를 나타내는 방법을 낙타 등이라고 한다
+            _언더바 케이스로 붙이는 방법, 하이푼으로 붙이는 방법도 있다(제일 외국에서 많이 쓰임)
+            회사마다 쓰는 방법이 다르다 한글로는 잘 안쓴다 -->
+            <div class="top_banner">
+                <div class="container">
+                    <!-- 보통 12000의 와이드형을 container라고 한다 -->
+                    <span>깔끔이청소 : 정말 똑소리나게 잘하는 부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문 깔끔이
+                    </span>
+                    <a href="#!">
+                        <i class="xi-pause"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">깔끔이청소 소개</a></li>
+                        <li><a href="#!">아파트입주청소</a></li>
+                        <li><a href="#!">이사/상가청소</a></li>
+                        <li><a href="#!">사무실청소</a></li>
+                        <li><a href="#!">청소갤러리</a></li>
+                        <li><a href="#!">질문과답변</a></li>
+                    </ul>
+                    <!-- 메뉴를 이 네비대로 쏴준다 -->
 
-    <hr>
-    <!-- 선 긋기 닿는 태그가 없는데도 불구하고 박스의 성질을 가지고 있음 인라인 블록 -->
+                </nav>
+            </div>
+        </header>
+        <main>
+            main
 
-    <ol>
-        <li>
-            <a href="t01.html" target="_blank">박스와 테두리 만들기 - 220428</a>
-            <!-- 이런걸 atrribute라고 부른다 -->
-        </li>
-        <li>
-            <a href="t02.html" target="_blank">박스 동일하게 놓기 - 220428</a>
-        </li>
-        <li>
-            <a href="t03.html" target="_blank">박스 간격과 변화 시간, 마우스 커서 변화 - 220428</a>
-        </li>
-        <!-- ol(odd list)은 넘버가 매겨진 리스트 ul은 번호가 안붙는 리스트
-        dl, tl
-        리스트, 즉 목록이기 때문에 세트로 따라다닌다
-        자식으로는 li만 쓰인다 증손자부터는 ex)biv가 쓰여도 된다 -->
-    </ol>
+            <!-- main에는 클래스가 안붙는다.
+            main이 크롬에서는 지원되지만 인터넷 익스플로러에선 지원을 안해서 혹시나 싶어서 뭘 붙이진 않는다.
+            can i use에서 어디서 쓸 수 있는지 검색할 수 있다-->
+        </main>
+        <footer class="footer">
+            &copy; lee
+            <!-- 카피라이터 표시 -->
+        </footer>
+    </div>
 </body>
 
 </html>
