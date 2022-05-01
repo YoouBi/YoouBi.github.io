@@ -1,0 +1,20 @@
+.xi-bars {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    padding: 10px;
+    background: #ddd;
+}
+
+/* 텍스트로 취급해주기 때문에 폰트 사이즈와 padding이 먹는다 */
+
+@media (max-width:768px) {
+
+    /* 화면 가로 사이즈가 768px (보통 아이패드 가로사이즈가 768 아이폰은320)이하가 될 때 아래의 코드가 되게 만든다
+    이 레벨을 4개까지 만드는 회사도 있다 모니터, 디바이스와 핸드폰까지 */
+    .mopen {
+        display: block;
+    }
+}
