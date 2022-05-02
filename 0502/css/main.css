@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* container 순서는 위 */
+
+.header .top_banner {
+    border-bottom: 1px solid #f2f2f2;
+    /* 직선은 solid, 실선? dotted, 점선 dashed */
+    line-height: 40px;
+}
+
+.header .top_banner span {
+    margin: 0 0 0 auto;
+}
+
+.header .top_banner a {
+    margin: 0 0 0 10px;
+    padding: 0 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    /* 헤더 안에 탑 배너가 있을 땐 한칸 띄워줘야 함
+    margin으로 옆 공간을 띄운 이유는
+    display: flex로 세로 정렬이었던 박스 공간을 가로 정렬로 바꾸어서
+    이미 우측이 땡겨지고 있었기 때문에 text-align :right로 우측으로 땡기는게 안됨
+    border로 양옆 아이콘에 박스 선을 줬음 */
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    /* 다단 메뉴는 ul이 후손에 또 하나 더 있을 수 있기 때문에 자식인 ul을 찾기 위해 >을 쓴다 */
+    display: flex;
+    /* 익스플로러 10까진 먹음 */
+    gap: 30px;
+    /* gap은 익스플로러에서 안먹음. 마진이나 패딩으로 준다 검색하면 세개가...벌어지는...방...법...? */
+    line-height: 90px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* 메인비주얼 */
+.main_visual {
+    position: relative;
+    /* 기준점으로 잡아줌 */
+    height: 600px;
+    /* 높이를 안주면 떠올라서 사라진다 */
+    background: url(../img/main_slider01.jpg) no-repeat center top/cover;
+}
+
+.main_visual .slogan {
+    position: absolute;
+    top: 100px;
+    right: 600px;
+    /* right와 left를 동시에 잡으면 박스를 늘린다
+    top: 100px;
+    right: 600px; 을
+    inset: 100px 600px auto auto; 로 바꿀 수 있다
+    inset의 순서는 상우하좌. 익스플로러에서는 지원을 안함*/
+}
+
+.main_slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+/* 가로 사이즈를 1200px으로 줘서 메뉴와 사이즈 맞게 중앙에 오게 됨! */
+
+.main_slider h3 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0 0 30px 0;
+    color: #00f;
+}
+
+.main_slider strong {
+    display: block;
+    margin: 0 0 20px 0;
+    color: #fd7e14;
+}
+
+.main_slider .slick-dots {
+    padding: 30px 0 0 0;
+}
+
+/* dot ui박스의 내부공간 우측에 30px의 공간을 줘서 도트 사이의 공간을 주기*/
+
+.main_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 80px;
+    height: 4px;
+    background: #333;
+}
+
+/* 슬라이더에 ul이 붙었으므로 자연히 li 리스트가 붙었을 것이다 */
+
+.main_slider .slick-dots li.slick-active {
+    background: #fd7e14;
+}
+
+.main_slider .slick-dots button {
+    display: none;
+}
+
+/* 슬라이더가 움직일 때마다 slick-active가 움직였으므로 여기에 색을 입히면 슬라이더가 움직일때마다 노란색이 될 것 */
+
+/* <div class="a">
+    <div class="b">
+        <div class="c">
+        </div>
+    </div>
+</div>
+b를 찾을 때는 .a .c 혹은  a>b(자식만 가능)로 자식 관계를 찾을 수 있다
+<div class="a b"> 붙여서 쓸 때는 같이 있을 때 -> 검색
+*는 모든(all) 선택 */
