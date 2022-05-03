@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- en으로 해도 한국어가 안되는건 아니지만 시각장애인들이 못 읽음 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <!-- 원래 있던 값을 없애고 내 값을 채워넣기 위해 reset, 후에 레이아웃을 덮어씌운다
+        순서가 중요함! 순서대로 처리하므로 우선순위는 가장 마지막에 오는 main이 된다 -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <script src="./js/main.js" defer></script>
+    컴퓨터는 바보라 head에 넣어두면 시작할 때 실행해버리고 잊음
+    그래서 defer로 다 읽고나서 하라는 명령을 한다
+    면접 단골 질문! css를 왜 뒤에 쓰느냐 -->
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <!-- 대문자로 다른 단어의 시작 앞머리를 나타내는 방법을 낙타 등이라고 한다
+            _언더바 케이스로 붙이는 방법, 하이푼으로 붙이는 방법도 있다(제일 외국에서 많이 쓰임)
+            회사마다 쓰는 방법이 다르다 한글로는 잘 안쓴다 -->
+            <div class="top_banner">
+                <div class="container">
+                    <!-- 보통 12000의 와이드형을 container라고 한다 -->
+                    <span>깔끔이청소 : 정말 똑소리나게 잘하는 부산 양산 김해 기장 아파트입주청소 이사청소 오피스텔청소 상가청소 전문 깔끔이
+                    </span>
+                    <a href="#!">
+                        <i class="xi-pause"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">깔끔이청소 소개</a></li>
+                        <li><a href="#!">아파트입주청소</a></li>
+                        <li><a href="#!">이사/상가청소</a></li>
+                        <li><a href="#!">사무실청소</a></li>
+                        <li><a href="#!">청소갤러리</a></li>
+                        <li><a href="#!">질문과답변</a></li>
+                    </ul>
+                    <!-- 메뉴를 이 네비대로 쏴준다 -->
+
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- 메인비주얼 -->
+            <section class="main_visual">
+                <div class="main_slider">
+                    <div class="item01">
+                        <h3>아파트입주청소</h3>
+                        <p>
+                            <strong>신축 아파트나 빌라 등 입주 전 상태에서의 실내 청소</strong>
+                            보양지 제거, 공사먼지 제거, 오염 제거, 시멘트가루 제거 등<br>
+                            구석구석 세밀하게 청소하는 서비스로 가족의 건강을 위해서 입주 전에 꼭 해야 하는 서비스입니다.
+                        </p>
+                    </div>
+                    <div class="item02">
+                        <h3>
+                            이사/상가청소
+                        </h3>
+                        <p>
+                            <strong>오랫동안 누적된 공간의 묵은 때, 찌든 때, 누적된 먼지와 세균들을 이사하기전에 청소</strong>
+                            신축 건물은 공사기간 중 쌓인 미세먼지/유해성분들이 곳곳에 산재해 있습니다.<br>
+                            입추청소를 맡기시면 유해성분 제거하고 청결한 환경을 만드실 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="item03">
+                        <h3>
+                            사무실청소
+                        </h3>
+                        <p>
+                            <strong>쾌적한 업무 환경을 만들고, 능률적인 업무를 수행하기 위해 반드시 필요한 청소</strong>
+                            쾌적한 업무 환경을 만들고, 능률적인 업무를 수행하기 위해 반드시 필요한 청소 작업 입니다.<br>
+                            사무실청소에 있어서 가장 중요한 점은 빠른 시간 내에 완벽한 작업을 마무리 하는 것이 중요합니다.
+                        </p>
+                    </div>
+                    <!-- div.item0$*3라고 쓴 후 tab하면 숫자 순서대로 3개 만들어짐 -->
+                </div>
+                <div class="slogan">
+                    <img src="./img/slogan.png" alt="">
+                </div>
+            </section>
+            <section class="main_banner">
+                <div class="container">
+                    <figure>
+                        <a href="">
+                            <strong>깔끔이청소 소개</strong>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <strong>부산아파트입주청소</strong>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <strong>이사/상가청소</strong>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <strong>청소갤러리</strong>
+                        </a>
+                    </figure>
+                    <div class="costomer">
+                        <a href="tel:051-331-3354">051-331-3354</a>
+                        <p>부산 김해 양산 기장 아파트입주청소 이사청소<br />
+                            믿고 맡길 수 있는 청소 전문업체</p>
+                        <i class="xi-user-plus-o"></i>
+                        <!-- i 자체가 display-inline 속성을 가지고 있어서 패딩,마진 먹음 -->
+                    </div>
+                </div>
+            </section>
+            <section class="main_link">
+                <!-- <h2>Lorem ipsum dolor sit amet.</h2>
+                main.css의 .main_link h2::before와 .main_link h2::after로 글자 양 옆의 실선을 만드는 방법
+                <ul>
+                    <li><i class="xi=bars"></i>Lorem ipsum dolor sit.</li>
+                    리스트 클래스를 만들어놓고 쓰는게 일반적
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul> -->
+                <div class="container">
+                    <figure>
+                        <img src="./img/main_s011.jpg" alt="">
+                        <h3>아파트입주청소</h3>
+                        <p><strong>신축 아파트나 빌라 등 입주 전 상태에서의 실내 청소</strong>
+                            보양지 제거, 공사먼지 제거, 오염 제거, 시멘트가루 제거 등<br>
+                            구석구석 세밀하게 청소하는 서비스로 가족의 건강을 위해서 입주 전에 꼭 해야 하는 서비스입니다.</p>
+                        <a href="#!">more</a>
+                    </figure>
+                    <figure>
+                        <img src="./img/main_s012.jpg" alt="">
+                        <h3>이사/상가청소</h3>
+                        <p><strong>오랫동안 누적된 공간의 묵은 때, 찌든 때, <br class="mline">누적된 먼지와 세균들을 이사하기전에 청소</strong>
+                            신축 건물은 공사기간 중 쌓인 미세먼지/유해성분들이 곳곳에 산재해 있습니다.<br>
+                            입추청소를 맡기시면 유해성분 제거하고 청결한 환경을 만드실 수 있습니다.</p>
+                        <a href="#!">more</a>
+                    </figure>
+                    <figure>
+                        <img src="./img/main_s013.jpg" alt="">
+                        <h3>사무실청소</h3>
+                        <p>쾌적한 업무 환경을 만들고, 능률적인 업무를<br class="mline"> 수행하기 위해 반드시 필요한 청소</strong>
+                            쾌적한 업무 환경을 만들고, 능률적인 업무를 수행하기 위해 반드시 필요한 청소 작업 입니다. <br>
+                            사무실청소에 있어서 가장 중요한 점은 빠른 시간 내에 완벽한 작업을 마무리 하는 것이 중요합니다. <br></p>
+                        <a href="#!">more</a>
+                    </figure>
+                    <!-- figure*3>img+h3로 한번에 작성 가능 -->
+                </div>
+            </section>
+        </main>
+        <!-- main에는 클래스가 안붙는다.
+        main이 크롬에서는 지원되지만 인터넷 익스플로러에선 지원을 안해서 혹시나 싶어서 뭘 붙이진 않는다.
+        can i use에서 어디서 쓸 수 있는지 검색할 수 있다-->
+        <footer class="footer">
+            <div>부산광역시 북구 만덕2로 14 상가동 제314호</div>
+            <ul>
+                <li>대표자 : 전정선</li>
+                <li>사업자등록번호 : 606-11-45081</li>
+                <li>Tel : <a href="tel:051-331-3354">051-331-3354</a></li>
+                <li>e-mail : <a href="mailto:jjs3354@naver.com">jjs3354@naver.com</a></li>
+            </ul>
+            <address>&copy; 부산아파트입주청소 깔끔이청소 All Rights Reserved.</address>
+            <!-- 원래 소유자를 뜻했는데 주소를 쓰기도 한다 아니면 아예 전체를 다 넣어두기도 함 -->
+            <!-- &copy; 는 카피라이터 표시
+                    &nbsp는 한칸 띄우기
+                글자에 & 자체만 넣을 때엔 오류 뜰 수 있으므로 &amp로 쓴다 -->
+        </footer>
+        <!--<script src="./js/main.js"></script> 
+            <script src="./js/jquery-1.12.4.min.js"></script>
+            순서로 쓰면 jquery가 먼저 적용이 안되어있기 때문에 $가 안먹힌다 -->
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
