@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 에디터에 따라 만들어주기도 하고 안만들어주기도 하기 때문에 이해해두는게 좋다
+    안들어가있으면 핸드폰에서도 pc처럼 보인다 meta viewport로 검색하면 나오지만 보통 잘 안바꾼다 -->
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 이게없으면 박스가 많이 떨어져있음
+        gap을 20으로 주었지만 그 이상으로 들어가있어서(피규어에 기본 디자인이 마진이 들어있음) 리셋해버린거 */
+
+        body {
+            background: #333;
+        }
+
+        .responsive {
+            background: #f00;
+        }
+
+        .responsive span {
+            display: none;
+        }
+
+        .res02 {
+            display: flex;
+            gap: 20px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .res02 figure {
+            flex: 1;
+            background: #ff0;
+        }
+
+        nav {
+            background: #f00;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            line-height: 40px;
+        }
+
+        nav>ul a {
+            display: block;
+            padding: 0 15px;
+            color: #fff;
+        }
+
+        .mopen {
+            display: none;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .mopen::before {
+            content: "O";
+        }
+
+        .mopen.on::before {
+            content: "X";
+        }
+
+        @media (max-width: 768px) {
+
+            /* media(+스크린 앤드 프린트. 생략 가능) =만약에/반응형이 되어라. 가로 사이즈가 768px이 되면 이렇게 보여줘라
+            768px은 아이패드 사이즈 500px정도가 핸드폰 중 가장 큰 사이즈 */
+            .responsive {
+                background: #369;
+            }
+
+            .responsive span {
+                display: block;
+            }
+
+            .res02 {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            .res02 figure {
+                flex: 1;
+                background: #f00;
+            }
+
+            nav {
+                position: fixed;
+                /* 앱솔루트로 하면 스크롤바가 생기는 기이한 현상이... */
+                top: 0;
+                left: -100%;
+                /* 메뉴 바를 메뉴버튼을 누르기 전까지 없애놓는다 */
+                background: #fff;
+                width: calc(100% - 90px);
+                /* 90픽셀을 남기고 100퍼센트를 채운다 */
+                height: 100vh;
+                /* v뷰포트 h높이의 100백퍼센트
+                근데 잘 안씀. 계산되어있기 때문에 밑에 스크롤바가 생길 가능성 */
+                padding: 50px 15px;
+                /* 메뉴의 나누는 줄(border의 길이 조절) */
+                transition: 0.5s;
+            }
+
+            nav.on {
+                left: 0;
+                /* on이라는 클래스가 붙었을 때 좌표가 붙어라 */
+            }
+
+            nav>ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                list-style: none;
+                line-height: 40px;
+            }
+
+            nav>ul a {
+                display: block;
+                padding: 0 15px;
+                color: #333;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .mopen {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <h1>
+            <span>선택장애있음.</span>
+        </h1>
+    </div>
+
+    <div class="res02">
+        <figure>01</figure>
+        <figure>01</figure>
+        <figure>01</figure>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu01</a></li>
+        </ul>
+    </nav>
+    <div class="mopen">
+    </div>
+    <!-- 네비 바깥쪽. 네비 안쪽에 쓰면 따라다님 -->
+    <script>
+        // document.querySelector('.mopen').style.display = 'none'
+        document.querySelector('.mopen').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('on')
+            this.classList.toggle('on')
+            // 여기서의 디스는 자기자신이므로 document.querySelector('.mopen')
+        })
+        // 매개함수로 들어오는 함수를 콜백 함수라고 부른다->여기선 function
+        // 클릭했을 때 on라는 클래스를 추가해줘add 없애줘remove 넣었다뺐다해줘toggle
+        // 나머지 일은 css가 하도록 내버려둔다
+    </script>
+</body>
+
+</html>
