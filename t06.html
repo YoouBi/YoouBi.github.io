@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover01</title>
+    <style>
+        /* a {
+            color: inherit;
+        }
+
+        .hover01 {
+            color: #f00;
+            font-size: 50px;
+        }
+
+        .hover01:hover a {
+            color: #369;
+        }
+
+        .hover01>ul {
+            display: none;
+        }
+
+        .hover01:hover>ul {
+            display: block;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+        }
+
+        nav {
+            position: relative;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            z-index: 999;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+            /* 박스 안의 내용들을 가운데로 */
+        }
+
+        nav>ul>li {
+            /* 다단메뉴 잡을때는 자식관계 확실하게 잡아주는게 좋다 */
+            position: relative;
+            line-height: 40px;
+        }
+
+        nav>ul>li ul {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            /* background: #ff0; */
+            z-index: 999;
+        }
+
+        nav:hover>ul>li ul {
+            height: 160px;
+            /* height: auto;
+            오토는 상상이라 수치가 없음. java에서는 계산이 되지만 css에서는 계산이 안된다 */
+        }
+
+        nav::before {
+            position: absolute;
+            top: 41px;
+            /* 인바인하이트 때문에 볼드가 밀려나있는 상태라서 1픽셀 더 */
+            left: 0;
+            /* display: block;
+            인라인이라 박스 만들어줘야함 */
+            content: "";
+            width: 100%;
+            height: 0px;
+            background: #ff0;
+            transition: 0.5s;
+        }
+
+        nav:hover::before {
+            height: 180px;
+        }
+
+        .visual {
+            position: relative;
+            /* position을 가지게 되면 앞으로 덮어씌움 */
+            background: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="hover01">
+        <a href="">hahahaha</a>
+        클래스에 먹인 속성보다 안쪽에 먹인 속성이 우선되어있음
+        <ul>
+            <li><a href="">smenu01</a></li>
+            <li><a href="">smenu01</a></li>
+            <li><a href="">smenu01</a></li>
+            <li><a href="">smenu01</a></li>
+        </ul>
+    </div> -->
+    <h1>다단메뉴</h1>
+    <nav>
+        <ul>
+            <li><a href="">menu01</a>
+                <ul>
+                    <li><a href="">smenu01</a></li>
+                    <li><a href="">smenu02</a></li>
+                    <li><a href="">smenu03</a></li>
+                    <li><a href="">smenu04</a></li>
+                </ul>
+            </li>
+            <li><a href="">menu02</a>
+                <ul>
+                    <li><a href="">smenu01</a></li>
+                    <li><a href="">smenu02</a></li>
+                    <li><a href="">smenu03</a></li>
+                    <li><a href="">smenu04</a></li>
+                </ul>
+            </li>
+            <li><a href="">menu03</a>
+                <ul>
+                    <li><a href="">smenu01</a></li>
+                    <li><a href="">smenu02</a></li>
+                    <li><a href="">smenu03</a></li>
+                    <li><a href="">smenu04</a></li>
+                </ul>
+            </li>
+            <li><a href="">menu04</a>
+                <ul>
+                    <li><a href="">smenu01</a></li>
+                    <li><a href="">smenu02</a></li>
+                    <li><a href="">smenu03</a></li>
+                    <li><a href="">smenu04</a></li>
+                </ul>
+            </li>
+            <li><a href="">menu05</a>
+                <ul>
+                    <li><a href="">smenu01</a></li>
+                    <li><a href="">smenu02</a></li>
+                    <li><a href="">smenu03</a></li>
+                    <li><a href="">smenu04</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- ul>li*5>a{menu0$}+ul>li*4>a{smenu0$} -->
+    </nav>
+    <section class="visual">
+        slogan
+    </section>
+</body>
+
+</html>
