@@ -1,5 +1,10 @@
+h1 {
+    display: inline-block;
+    height: 300px;
+}
+
 hr {
-    margin: 10px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 .document_index>ol {
