@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main_visual figure {
+    position: relative;
+    height: 1000px;
+}
+
+.main_visual .banner01 {
+    background: url(../img/banner/1616122384-JFZQU.jpg) no-repeat center center/cover;
+}
+
+.main_visual .banner02 {
+    background: url(../img/banner/1616409946-ASUDD.jpg) no-repeat center center/cover;
+}
+
+.main_visual .banner03 {
+    background: url(../img/banner/1633480196-GHRUW.png) no-repeat center center/cover;
+}
+
+.main_visual .banner04 {
+    background: url(../img/banner/1651647874-FRQMX.png) no-repeat center center/cover;
+}
+
+.main_visual .banner05 {
+    background: url(../img/banner/1651647893-YJKLD.png) no-repeat center center/cover;
+}
+
+.main_visual .container {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: blanchedalmond;
+}
+
+.main_visual .container p {
+    font-size: 30px;
+}
+
+.main_visual h2 {
+    font-size: 85px;
+    font-weight: 800;
+    color: beige;
+    padding: 20px 0;
+}
+
+.main_visual h3 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 80px 0 0 0;
+}
