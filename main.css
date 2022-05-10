@@ -57,7 +57,7 @@ h1 {
 }
 
 .document_index ol.on {
-    display: inline-block;
+    display: block;
 }
 
 .document_index ol li {
