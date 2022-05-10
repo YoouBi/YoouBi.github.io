@@ -25,6 +25,7 @@ h1 {
 .starlight {
     display: flex;
     margin: 20px 0;
+    gap: 30px;
 }
 
 .document_index button {
@@ -38,7 +39,6 @@ h1 {
 .document_index button.rotateStar {
     animation: xi-star 6s linear infinite;
 }
-
 
 @keyframes xi-star {
     100% {

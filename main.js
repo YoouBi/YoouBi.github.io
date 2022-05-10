@@ -1,4 +1,5 @@
 $('.document_index button').on('click', function () {
     $(this).toggleClass('rotateStar');
-    $('.document_index ol').toggleClass('on');
+    // $('.document_index ol').toggleClass('on');
+    $(this).next().toggleClass('on');
 })
