@@ -15,11 +15,16 @@ h1 {
 }
 
 .space {
-    background: #333;
+    background: #f1f1f1;
 }
 
 .document_index {
-    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
+}
+
+.starlight {
+    display: flex;
+    margin: 20px 0;
 }
 
 .document_index button {
@@ -30,18 +35,32 @@ h1 {
     color: #fff;
 }
 
-.document_index xi-star {
-    display: inline-block;
-    color: #fff;
+.document_index button.rotateStar {
+    animation: xi-star 6s linear infinite;
 }
 
-.document_index>ol {
-    padding: 25px 20px;
-    margin: 30px 0 0 0;
-    background: #cfffe5;
+
+@keyframes xi-star {
+    100% {
+        transform: rotate(360deg);
+        display: inline-block;
+        color: #cfffe5;
+    }
+}
+
+.document_index ol {
+    display: none;
+    padding: 30px 20px;
+    vertical-align: 50%;
+    color: #fff;
+    background: #333;
     border-radius: 15px;
 }
 
-.document_index>ol li {
-    margin: 5px 0;
+.document_index ol.on {
+    display: inline-block;
+}
+
+.document_index ol li {
+    padding: 5px 0;
 }
