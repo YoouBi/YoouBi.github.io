@@ -38,6 +38,7 @@ h1 {
 
 .document_index button.rotateStar {
     animation: xi-star 6s linear infinite;
+    color: #333;
 }
 
 @keyframes xi-star {
@@ -50,7 +51,7 @@ h1 {
 .document_index ol {
     display: none;
     padding: 30px 20px;
-    vertical-align: 50%;
+    margin: auto 0;
     color: #fff;
     background: #333;
     border-radius: 15px;
