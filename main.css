@@ -28,6 +28,22 @@ h1 {
     gap: 30px;
 }
 
+.star01 {
+    height: 300px;
+}
+
+.star02 {
+    height: 220px;
+}
+
+.star03 {
+    height: 200px;
+}
+
+.tag {
+    flex-direction: column;
+}
+
 .document_index button {
     border: none;
     outline: none;

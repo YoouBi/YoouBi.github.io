@@ -250,9 +250,23 @@ nav>ul>li~li::before {
         right: 160px;
     }
 
-    #searchForm input[type="text"] {
-    width: calc(100% - 5px);
+    /* #searchForm {
+        left: -100%;
+        transition: 0.5s;
     }
+
+    nav.on~#searchForm {
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        z-index: 1001;
+    } */
+
+
+    #searchForm input[type="text"] {
+        width: 100%;
+    }
+
     /* 여길 살리는 것 과제! */
 }
 
