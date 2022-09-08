@@ -62,6 +62,10 @@ body {
     background-color: #e8d2a0;
 }
 
+.menu_slider img {
+    width: 304px;
+}
+
 .menu_slider h2 {
     font-size: 40px;
 }
