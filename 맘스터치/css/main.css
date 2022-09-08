@@ -62,6 +62,10 @@ body {
     background-color: #e8d2a0;
 }
 
+.menu_slider .menuYellow {
+    background-color: #ffaa01;
+}
+
 .menu_slider img {
     width: 304px;
 }
