@@ -91,6 +91,10 @@ body {
    background-color: #f5e5ca;
 }
 
+.promo img {
+   float: left;
+}
+
 .promo h3 {
    font-size: 50px;
    color: #5d4237;
