@@ -24,7 +24,9 @@
     
     display: block;
     overflow: hidden;
-
+    
+    width: 326px;
+    height: 520px;
     margin: 0;
     padding: 0;
 }
