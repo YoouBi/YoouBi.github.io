@@ -99,6 +99,7 @@ body {
 .promo p {
    margin: 100px 0 20px 0;
    font-size: 26px;
+   font-weight: bold;
    color: #ac9385;
 }
 
@@ -111,5 +112,7 @@ body {
 .promo button {
    padding: 30px 70px;
    font-size: 32px;
+   font-weight: bold;
    color: #5d4237;
+   background-color: transparent;
 }
