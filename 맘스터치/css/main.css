@@ -74,7 +74,7 @@ body {
 
 .menu_slider img {
     width: 250px;
-    margin: 150px 0 0 0;
+    margin: 150px auto 0 auto;
 }
 
 .menu_slider h2 {
