@@ -7,7 +7,7 @@ $('.main_slider').slick({
 });
 
 $('.menu_slider').slick({
-  dots: true,
+  draggable : false ,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
