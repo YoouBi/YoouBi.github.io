@@ -97,6 +97,7 @@ body {
 }
 
 .promo p {
+   margin: 100px 0 20px 0;
    font-size: 26px;
    color: #ac9385;
 }
