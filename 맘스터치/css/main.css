@@ -89,10 +89,16 @@ body {
 .promo_slider {
    height: 600px;
    background-color: #f5e5ca;
+   text-align: center;
 }
 
 .promo img {
    float: left;
+}
+
+.promo p {
+   font-size: 30px;
+   color: #ac9385;
 }
 
 .promo h3 {
