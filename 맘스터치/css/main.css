@@ -67,6 +67,10 @@ body {
     background-color: #ffaa01;
 }
 
+.menu_slider .menuTaupe {
+   background-color: #d3bd94;
+}
+
 .menu_slider img {
     width: 250px;
     margin: 150px 0 0 0;
