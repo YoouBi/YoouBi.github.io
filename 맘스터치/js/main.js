@@ -8,8 +8,8 @@ $('.main_slider').slick({
 
 $('.menu_slider').slick({
   centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
+  centerPadding: '160px',
+  slidesToShow: 5,
   responsive: [
     {
       breakpoint: 768,
