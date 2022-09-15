@@ -96,6 +96,7 @@ body {
 }
 
 .promo h3 {
+   margin: 0;
    font-size: 50px;
    color: #5d4237;
 }
