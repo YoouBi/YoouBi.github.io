@@ -7,9 +7,9 @@ $('.main_slider').slick({
 });
 
 $('.menu_slider').slick({
-    centerMode: true,
+  centerMode: true,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 6,
   responsive: [
     {
       breakpoint: 768,
