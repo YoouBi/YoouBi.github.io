@@ -10,7 +10,7 @@ nav {
     position: absolute;
     top: 30px;
     left: 50%;
-}   
+}
 
 nav span {
    Width: 50px;
@@ -21,6 +21,20 @@ nav span {
 .main_visual figure {
     position: relative;
     height: 1000px;
+}
+
+.main_slider .slick-prev {
+   Width: 30px;
+   hight: 30px;
+   border-radius: 15px;
+   background-color: #fff2ca;
+}
+
+.main_slider .slick-next {
+   Width: 30px;
+   hight: 30px;
+   border-radius: 15px;
+   background-color: #fff2ca;
 }
 
 .main_visual .banner01 {
