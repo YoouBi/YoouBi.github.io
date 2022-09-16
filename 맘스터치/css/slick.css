@@ -16,25 +16,6 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    
-    .slick-arrow{
-    	width: 30px;
-        hight: 30px;
-        border-radius: 15px;
-        background-color: #fff2ca;
-    }
-	.slick-prev {
-    	    // 좌측 화살표의 위치값을 넣어줍니다.
-    	::before {
-            // 좌측 화살표의 요소를 입력합니다.
-        }
-     }
-     .slick-next {
-     	    // 우측 화살표의 위치값을 넣어줍니다.
-        &::before {
-            // 우측 화살표의 요소를 입력합니다.
-        }
-    }
 }
 
 .slick-list
