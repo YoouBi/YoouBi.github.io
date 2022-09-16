@@ -190,6 +190,15 @@ nav {
 }
 
 .franchise {
-   heigth: 550px;
+   height: 450px;
    background: url(../img/main/bg_franchise_1.jpg) no-repeat center center/cover;
 }
+
+.speechBubble {
+   width: 950px;
+   hieght: 300px;
+   background-color: #fff;
+   border: none;
+   border-radius: 150px;
+}
+
