@@ -6,6 +6,12 @@ body {
    font-family: 'Nanum Gothic', sans-serif;
 }
 
+nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}   
+
 nav span {
    Width: 50px;
    hight: 0px;
