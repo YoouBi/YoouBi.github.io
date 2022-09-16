@@ -230,10 +230,10 @@ nav {
 
 .speechBubble::after {
    position: absolute;
-   top:30px;
+   top:200px;
    width: 30px;
    height: 30px;
-   background-color: #fff;
+   background-color: #f00;
 }
    
 .speechBubble p {
