@@ -17,9 +17,5 @@ $('.menu_slider').slick({
 });
 
 $('.news_slider').slick({
-  arrows: false,
-  draggable : true,
-  infinite: true,
-  slidesToShow: 1,
-  variableWidth: true
+  arrows: false
 });
