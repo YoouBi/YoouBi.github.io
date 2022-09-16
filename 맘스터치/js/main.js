@@ -18,7 +18,7 @@ $('.menu_slider').slick({
 
 $('.news_sliderr').slick({
   arrows: false,
-  draggable : false,
+  draggable : true,
   infinite: true,
   slidesToShow: 1,
   variableWidth: true
