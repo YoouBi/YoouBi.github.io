@@ -190,5 +190,6 @@ nav {
 }
 
 .franchise {
+   heigth: 550px;
    background: url(../img/main/bg_franchise_1.jpg) no-repeat center center/cover;
 }
