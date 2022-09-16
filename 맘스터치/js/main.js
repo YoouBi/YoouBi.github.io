@@ -12,7 +12,6 @@ $('.menu_slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  centerMode: true,
   centerPadding: '160px',
   variableWidth: true
 });
