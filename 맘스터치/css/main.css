@@ -123,7 +123,7 @@ nav span {
 
 .promo img {
    float: left;
-   margin: 30px;
+   margin: 0 30px 0 0;
 }
 
 .promo p {
@@ -135,7 +135,7 @@ nav span {
 }
 
 .promo h3 {
-   margin: 0;
+   margin: 0 0 40px 0;
    font-size: 50px;
    color: #5d4237;
 }
