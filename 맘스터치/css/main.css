@@ -26,6 +26,7 @@ nav span {
 .main_slider .slick-prev {
    Width: 30px;
    height: 30px;
+   border: none;
    border-radius: 15px;
    background-color: #fff2ca;
 }
@@ -33,6 +34,7 @@ nav span {
 .main_slider .slick-next {
    Width: 30px;
    height: 30px;
+   border: none;
    border-radius: 15px;
    background-color: #fff2ca;
 }
