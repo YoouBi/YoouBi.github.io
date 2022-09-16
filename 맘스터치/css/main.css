@@ -216,12 +216,25 @@ nav {
    border-radius: 190px;
 }
 
-.news_silder figure {
-   height: 240px;
+.speechBubble p {
+   margin: 60px 0 0 0;
+   font-size: 20px;
+   color: #ac9973;
+}
+
+.speechBubble h3 {
+   font-size: 42px;
+   font-weight: bolder;
+   margin: 20px 0 25px 0;
+   color: 
+}
+
+.news_silder {
+   height: 330px;
 }
 
 .momsSNS {
-   height: 240px;
+   height: 330px;
    background: url(../img/main/bg_sns.jpg) no-repeat center center/cover;
 }
 
