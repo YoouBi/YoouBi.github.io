@@ -5,6 +5,13 @@ $('.main_slider').slick({
     
     prevArrow: "<button type='button' class='slick-prev'><i class='fi fi-sr-angle-small-left'></i></button>",
     nextArrow: "<button type='button' class='slick-next'><i class='fi fi-sr-angle-small-left'></i></button>",
+    
+    responsive: [{
+        breakpoint: 1250,
+		settings: {
+            width: '1250px';
+        }
+    }]
 });
 
 $('.menu_slider').slick({
