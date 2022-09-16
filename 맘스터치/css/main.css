@@ -253,4 +253,12 @@ nav {
    background-color: #e3d6bf;
 }
 
+.areaAndOder img {
+   float: left;
+}
+
+.areaAndOder .area {
+   background-color: #fff;
+}
+
 
