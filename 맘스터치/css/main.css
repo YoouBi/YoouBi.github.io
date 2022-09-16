@@ -128,6 +128,10 @@ nav {
    background-color: #d3bd94;
 }
 
+.menu_slider .menuCarrot {
+   background-color: #d3bd94;
+}
+
 .menu_slider img {
     width: 270px;
     margin: 150px auto 0 auto;
@@ -148,12 +152,16 @@ nav {
    text-align: center;
 }
 
+.promo {
+   
+}
+
 .promo img {
    float: left;
    margin: 0 30px 0 0;
 }
 
-.promp div {
+.promptext {
    width: 400px;
 }
 
@@ -179,4 +187,8 @@ nav {
    background-color: transparent;
    border: 4px solid;
    border-radius: 35px;
+}
+
+.franchise {
+   background: url(../img/main/bg_franchise_1.jpg) no-repeat center center/cover;
 }
