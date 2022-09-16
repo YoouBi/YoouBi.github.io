@@ -45,7 +45,7 @@ nav {
 
 .main_visual figure {
     position: relative;
-    height: 1000px;
+    height: 1200px;
 }
 
 .main_slider .slick-prev {
@@ -150,7 +150,7 @@ nav {
 }
 
 .promo_slider {
-   height: 600px;
+   height: 660px;
    background-color: #f5e5ca;
    text-align: center;
 }
@@ -193,7 +193,7 @@ nav {
 }
 
 .franchise {
-   height: 500px;
+   height: 520px;
    background: url(../img/main/bg_franchise_1.jpg) no-repeat center center/cover;
    text-align: center;
 }
@@ -238,11 +238,11 @@ nav {
 }
 
 .news_silder figure {
-   height: 350px;
+   height: 450px;
 }
 
 .momsSNS {
-   height: 350px;
+   height: 450px;
    background: url(../img/main/bg_sns.jpg) no-repeat center center/cover;
 }
 
