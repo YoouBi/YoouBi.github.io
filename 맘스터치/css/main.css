@@ -199,7 +199,7 @@ nav {
 }
 
 .speechBubble::before {
-   content: url(../img/main/icon_franchise.jpg) no-repeat center center/cover;
+   content: url(../img/main/icon_franchise.jpg);
 }
 
 .speechBubble {
@@ -209,5 +209,9 @@ nav {
    background-color: #fff;
    border: none;
    border-radius: 190px;
+}
+
+.news_silder {
+   height: 400px;
 }
 
