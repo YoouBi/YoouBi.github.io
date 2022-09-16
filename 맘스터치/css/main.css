@@ -229,13 +229,18 @@ nav {
    color: 
 }
 
-.news_silder {
-   height: 330px;
+.news_silder figure {
+   height: 350px;
 }
 
 .momsSNS {
-   height: 330px;
+   height: 350px;
    background: url(../img/main/bg_sns.jpg) no-repeat center center/cover;
+}
+
+.areaAndOder {
+   height: 500px;
+   background-color: #e3d6bf;
 }
 
 
