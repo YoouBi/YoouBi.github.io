@@ -20,11 +20,11 @@ nav {
 
 .burgerTabBtn>span:nth-child(1) {
    position: absolute;
-   width: 80px;
+   width: 75px;
    height: 40px;
    background-color: transparent;
    border: 5px solid blanchedalmond;
-   border-radius: 20px 20px 0 0;
+   border-radius: 40px 40px 0 0;
 }
 
 .burgerTabBtn>span:nth-child(2) {
