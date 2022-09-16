@@ -7,8 +7,22 @@ body {
    font-family: 'Nanum Gothic', sans-serif;
 }
 
+nav {
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    left: 50%;
+}
+
 .burgerTabBtn {
    position: fixed;
+   z-index: 3;
+   Width: 50px;
+   height: 80px;
+}
+
+nav span {
+   border: 5px solid blanchedalmond;
 }
 
 .burgerTabBtn>span:nth-child(1) {
@@ -21,19 +35,6 @@ body {
 
 .burgerTabBtn>span:nth-child(3) {
    top: 80px;
-}
-
-nav {
-    position: fixed;
-    z-index: 2;
-    top: 30px;
-    left: 50%;
-}
-
-nav span {
-   Width: 50px;
-   height: 0px;
-   border: 5px solid blanchedalmond;
 }
 
 .main_visual figure {
