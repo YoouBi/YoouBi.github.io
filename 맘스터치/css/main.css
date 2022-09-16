@@ -210,6 +210,7 @@ nav {
    display: inline-block;
    position: relative;
    top: 80px;
+   left: 44%;
    width: 950px;
    height: 260px;
    margin: 50px;
@@ -218,7 +219,7 @@ nav {
    border-radius: 190px;
 }
 
-.speechBubble botton {
+.speechBubble button {
    padding: 20px 80px;
    font-size: 17px;
    font-weight: bolder;
