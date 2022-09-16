@@ -7,8 +7,24 @@ body {
    font-family: 'Nanum Gothic', sans-serif;
 }
 
+.burgerTabBtn {
+   position: fixed;
+}
+
+.burgerTabBtn>span:nth-child(1) {
+   top: 40px;
+}
+
+.burgerTabBtn>span:nth-child(2) {
+   top: 60px;
+}
+
+.burgerTabBtn>span:nth-child(3) {
+   top: 80px;
+}
+
 nav {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 30px;
     left: 50%;
