@@ -15,3 +15,10 @@ $('.menu_slider').slick({
   centerPadding: '160px',
   variableWidth: true
 });
+
+$('.news_sliderr').slick({
+  draggable : false,
+  infinite: true,
+  slidesToShow: 1,
+  variableWidth: true
+});
