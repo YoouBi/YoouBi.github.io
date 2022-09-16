@@ -20,12 +20,10 @@ nav {
    height: 90px;
 }
 
-nav span {
-   border: 5px solid blanchedalmond;
-}
-
 .burgerTabBtn>span:nth-child(1) {
-   top: 50px;
+   hight: 50px;
+   background-color: transparent;
+   border: 5px solid blanchedalmond;
 }
 
 .burgerTabBtn>span:nth-child(2) {
