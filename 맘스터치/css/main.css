@@ -30,6 +30,8 @@ nav span {
    z-index: 2;
    Width: 44px;
    height: 44px;
+   top: 400px;
+   left: 80px;
    border: none;
    border-radius: 22px;
    background-color: #fff2ca;
