@@ -18,8 +18,8 @@ nav {
    float: left;
 }
 
-.burgerTabBtn span {
-   Width: 80px;
+.burgerTabBtn>span {
+   width: 80px;
 }
 
 .burgerTabBtn>span:nth-child(1) {
@@ -48,10 +48,10 @@ nav {
 .main_slider .slick-prev {
    position: absolute;
    z-index: 2;
-   Width: 44px;
+   width: 44px;
    height: 44px;
    top: 650px;
-   left: 30%;
+   left: 15%;
    border: none;
    border-radius: 22px;
    background-color: #fff2ca;
@@ -60,7 +60,7 @@ nav {
 .main_slider .slick-next {
    position: absolute;
    z-index: 2;
-   Width: 44px;
+   width: 44px;
    height: 44px;
    border: none;
    border-radius: 22px;
