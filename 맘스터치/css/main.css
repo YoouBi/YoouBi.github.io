@@ -21,7 +21,7 @@ nav {
 }
 
 .burgerTabBtn>span:nth-child(1) {
-   hight: 50px;
+   height: 50px;
    background-color: transparent;
    border: 5px solid blanchedalmond;
 }
