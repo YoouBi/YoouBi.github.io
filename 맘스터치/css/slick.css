@@ -18,9 +18,9 @@
     -webkit-tap-highlight-color: transparent;
     
     .slick-arrow{
-    	width: 50px;
-        hight: 50px;
-        border-radius: 25px;
+    	width: 30px;
+        hight: 30px;
+        border-radius: 15px;
         background-color: #fff2ca;
     }
 	.slick-prev {
