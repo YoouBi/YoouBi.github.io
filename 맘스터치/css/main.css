@@ -26,6 +26,8 @@ nav span {
 }
 
 .main_slider .slick-prev {
+   position: absolute;
+   z-index: 2;
    Width: 44px;
    height: 44px;
    border: none;
@@ -34,6 +36,8 @@ nav span {
 }
 
 .main_slider .slick-next {
+   position: absolute;
+   z-index: 2;
    Width: 44px;
    height: 44px;
    border: none;
